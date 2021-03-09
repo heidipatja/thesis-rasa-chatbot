@@ -1,92 +1,264 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: password
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - I forgot the password to my university account. How can I change it?
+    - I need a new password
+    - Wrong password
+    - I can't access my university account!
+    - Help resetting password
+#    - I can’t seem to login with my password, why is it not working and what can I do?
+#    - pwd not working
+#    - Help me access account
+#    - I'm locked out from my account. Please send me a new password.
+#    - How do I get a new password?
 
-- intent: goodbye
+- intent: accommodation
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - I would like to rent a room. Do you have any suggestions on where to find one?
+    - How to get a dorm room
+    - Find housing
+    - I need help finding student accommodation
+    - I'm looking for a place to rent for a year
+#    - I want to rent a flat!
+#    - Find a place to stay, preferably near campus
+#    - How can I find nice and affordable student accommodation near campus?
+#    - I need a place to live as soon as possible.
+#    - Am I eligible for student housing?
 
-- intent: affirm
+- intent: opening_hours
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - I'm thinking about coming by today. How long are you open?
+    - When do you close today?
+    - Opening hours today
+    - What time are you open on Tuesday?
+    - How long are you open tomorrow
+#    - Open today
+#    - When are you closing?
+#    - Are you open on Saturdays?
+#    - I need to talk to someone in person. What time can I visit you?
+#    - I'm wondering what your office hours are
 
-- intent: deny
+- intent: study_from_home
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - I want to know more about remote learning at the university
+    - Can I study from home?
+    - Remote studying
+    - Do I need to be on campus for my studies?
+    - Study without attending campus, is it possible?
+#    - Do you offer any online classes?
+#    - Is it possible to study without attending classes on campus
+#    - What do I need to study online?
+#    - I want to complete my master's degree. Is studying from home a possibility?
+#    - Can I attend school remotely
 
-- intent: mood_great
+- intent: application
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What’s the deadline for the application for spring term?
+    - How to apply to college
+    - Register course
+    - How do I apply to a course?
+    - How do I fill out an application?
+#    - I want to attend the university
+#    - I’m thinking about applying to your school. How do I do that?
+#    - How do I apply to a programme?
+#    - What is the admissions process?
+#    - Can I send in a written application?
 
-- intent: mood_unhappy
+- intent: study_abroad
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - I want to study abroad. Do you have a partner university in Singapore?
+    - I want to study in another country
+    - International studies
+    - Can I study in Canada?
+    - What are my options for studying abroad
+#    - Are my grades good enough to study abroad?
+#    - International studies
+#    - Apply to an exchange programme
+#    - Can I apply for exchange studies?
+#    - What are my options for studying abroad if I want to go next semester?
 
-- intent: bot_challenge
+- intent: course_literature
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - There’s an article in my reading list but I can’t find a copy of it. Any suggestions?
+    - Where can I find course books?
+    - Get used books
+    - I need a book for my class
+    - Find books and articles from my reading list
+#    - Where to find cheap course books
+#    - Do you have a bookstore on campus?
+#    - Where can I find course literature?
+#    - How do I find an article for my course
+#    - Can you borrow course books
+
+
+- intent: schedule
+  examples: |
+    - Where is the lecture on Python programming for beginners today?
+    - How do I find my schedule?
+    - Get schedule
+    - Can you tell me when the course ET1447 starts?
+    - I need to find my classroom
+#    - When does the robotics lesson start?
+#    - Find schedule for the civil engineering program
+#    - When is my lecture?
+#    - Can you show me the course calendar?
+#    - Course schedule for this week
+
+- intent: tuition
+  examples: |
+    - I’m planning on applying next year and I’m wondering about the costs
+    - How much is the tuition?
+    - Fee studying
+    - How to pay for university
+    - Tuition fees, how much are they per year?
+#    - How much money do you charge for a year of college?
+#    - Cost for studying
+#    - Do I have to pay to go to college?
+#    - I’m wondering what the fee for attending a single course is?
+#    - Tuition fees for computer science program
+
+
+- intent: student_life
+  examples: |
+    - Do you have any tips on things to do on campus, like clubs, pubs or other activities?
+    - How to find friends in school
+    - Student clubs
+    - How is the student life?
+    - How do I join the student union?
+#    - Are there any student pubs?
+#    - I want to get involved in some activity
+#    - Are there clubs that I can join?
+#    - Can I play on a school team on campus?
+#    - What can I do on my free time?
+
+- intent: food
+  examples: |
+    - Can I microwave my food somewhere at campus, or do I have to buy lunch?
+    - I want to find the cheapest food on campus
+    - Find food
+    - Are there any cafés nearby?
+    - Are there any good restaurants on campus?
+#    - I'm looking for some vegan lunch options near campus
+#    - Where do I buy snacks?
+#    - Where can I find pizza on campus?
+#    - I want to find takeaway.
+#    - Could you please help me find a coffee shop?
+
+- intent: student_health
+  examples: |
+    - I’m having some problems and need to talk to a counsellor.
+    - Help me find a counsellor
+    - Find shrink
+    - I’m feeling depressed and need to see someone
+    - How to manage performance anxiety?
+#    - Can you help me find someone to talk to about problems in school
+#    - I need some advice. Do you have anyone I can talk to?
+#    - I’m feeling stressed and need someone to talk to
+#    - I’m feeling depressed and need to see a psychiatrist
+#    - I can’t keep up with school
+
+- intent: phd
+  examples: |
+    - I want to do my PhD at your university. How do I apply?
+    - How to become a PhD student
+    - Write a dissertation
+    - Information on how to get a doctor's degree
+    - Qualifications for a Ph.D
+#    - Information about doctorate programs
+#    - I want to find information about postgraduate degrees
+#    - How to get my PhD
+#    - What are my options for a postgraduate degree in computer science?
+#    - How do I get a doctorate degree?
+
+- intent: swedish
+  examples: |
+    - I'm an exchange student and want to study Swedish, what are my options?
+    - Do I need to learn Swedish?
+    - Swedish course
+    - Can I learn Swedish before I come to Sweden
+    - Language requirements for studying in Sweden
+#    - Do I need to know Swedish if I want to study there
+#    - How much Swedish do I need to know
+#    - I'm thinking about applying to your school as an exchange student, do I need to know Swedish?
+#    - Can I manage without learning the language
+#    - Language skills for foreign students
+
+- intent: identity_number
+  examples: |
+    - I just moved to Sweden. How can I get a personal identity number?
+    - How to get a personal identity number
+    - Get identity number
+    - Applying for a personal identity code in Sweden.
+    - Social security number in Sweden
+#    - How do I get an ID number?
+#    - Apply for a personal number in Sweden
+#    - How to get a Swedish personal id number
+#    - Swedish identity documents for studies
+#    - Who can apply for a Swedish identity number?
+
+- intent: work
+  examples: |
+    - I want to study and work at the same time. What are my options?
+    - How to find work for students
+    - Work for students
+    - How can I earn some money while I study?
+    - Work part-time while studying
+#    - Am I allowed to work while I study in Sweden?
+#    - Are you allowed to work full time while studying?
+#    - How to find work in Sweden
+#    - How to find a job for students
+#    - Internships for university students
+
+- intent: disability
+  examples: |
+    - I have a learning disability. What kind of help can I get?
+    - Help for disabled students
+    - Disability support
+    - I have dyslexia and need access to talking books
+    - What kind of help can I get as a disabled person
+#    - I'm dyslexic and need some support
+#    - Support for students with learning disabilities
+#    - I need a sign language interpreter. What do I do?
+#    - I want to know more about how accessible the university is
+#    - Support for students with learning disorder
+
+- intent: study_councelling
+  examples: |
+    - I have some questions about my studies and want to talk to a study councellor
+    - Do you have student councellors?
+    - Change course
+    - I think I chose the wrong programme and need some advice
+    - I want to change to another programme. Who do I contact?
+#    - I need to contact my study coordinator
+#    - Find contact person for programme
+#    - I want to have a leave of studies, who can I talk to
+#    - I want to get in contact with the coordinator for exchange students in Norway
+#    - What should I do if I want to quit a course?
+
+- intent: equality
+  examples: |
+    - What can I do if I'm being discriminated against
+    - Is the university equal?
+    - Equal students
+    - How does the university handle harrassment cases?
+    - How do you work with improving equality?
+#    - I'm experiencing harrassment, can I file a complaint?
+#    - How do you improve gender equality?
+#    - What's your policy on discrimination
+#    - Is the university diverse?
+#    - Do you have policies for equal treatment in school
+
+- intent: internet
+  examples: |
+    - Do you have free wifi on campus and where?
+    - How to get wifi
+    - Find internet
+    - How to get access to good wifi
+    - I can't access the open network
+#    - How to connect to the wireless network at school
+#    - Free internet on campus
+#    - Best place to study with Wi-Fi
+#    - I keep losing my network connection when I'm at school
+#    - I want to surf on the web, how do I connect?
