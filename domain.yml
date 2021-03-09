@@ -4,36 +4,72 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
+- password
+- accommodation
+- opening_hours
+- study_from_home
+- application
+- study_abroad
+- course_literature
+- schedule
+- tuition
+- student_life
+- food
+- student_health
+- phd
+- swedish
+- identity_number
+- work
+- disability
+- study_councelling
+- equality
+- internet
+
 entities: []
 slots: {}
 responses:
   utter_greet:
   - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  utter_password:
+  - text: I understand that you want to reset your password.
+  utter_accommodation:
+  - text: I understand that you want to know more about accommodation.
+  utter_opening_hours:
+  - text: I understand that you want to know our opening hours.
+  utter_study_from_home:
+  - text: I understand that you want to know more about studying from home.
+  utter_application:
+  - text: I understand that you want to know more about the application process.
+  utter_study_abroad:
+  - text: I understand that you want to study abroad.
+  utter_course_literature:
+  - text: I understand that you want to find literature.
+  utter_schedule:
+  - text: I understand that you have a question about your schedule.
+  utter_tuition:
+  - text: I understand that you have a question about tuition.
+  utter_student_life:
+  - text: I understand that you want to know more about the student life.
+  utter_food:
+  - text: I understand that you want to know more about food options.
+  utter_student_health:
+  - text: I understand that you have questions about student health services.
+  utter_phd:
+  - text: I understand that you have questions about being a PhD student.
+  utter_swedish:
+  - text: I understand that you have questions about learning Swedish.
+  utter_identity_number:
+  - text: I understand that you have questions about getting a personal identity number.
+  utter_work:
+  - text: I understand that you have questions about work during studies.
+  utter_disability:
+  - text: I understand that you have questions about disability.
+  utter_study_councelling:
+  - text: I understand that you have questions about study councellors.
+  utter_equality:
+  - text: I understand that you have questions about equality.
+  utter_internet:
+  - text: I understand that you have questions about using internet.
 actions: []
 forms: {}
 e2e_actions: []
