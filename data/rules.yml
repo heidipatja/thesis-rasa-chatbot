@@ -101,3 +101,8 @@ rules:
   steps:
   - intent: internet
   - action: utter_internet
+
+- rule: Answer fallback intent
+  steps:
+  - intent: fallback_intent
+  - action: utter_fallback_intent

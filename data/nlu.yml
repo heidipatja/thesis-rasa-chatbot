@@ -262,3 +262,16 @@ nlu:
 #    - Best place to study with Wi-Fi
 #    - I keep losing my network connection when I'm at school
 #    - I want to surf on the web, how do I connect?
+
+- intent: fallback_intent
+  examples: |
+    - What is 2 + 2?
+    - I want to book a flight to Berlin.
+    - How many penguins are there in the world?
+    - How much does an alpaca weigh
+    - When are the Olypics?
+    - What should I watch on Netflix?
+    - What's the weather like tomorrow?
+    - How to go to space
+    - ösdfj gösldkgf sörj
+    - Are you going to take over the world, almighty chatbot?

@@ -24,6 +24,7 @@ intents:
 - study_councelling
 - equality
 - internet
+- fallback_intent
 
 entities: []
 slots: {}
@@ -70,6 +71,8 @@ responses:
   - text: I understand that you have questions about equality.
   utter_internet:
   - text: I understand that you have questions about using internet.
+  utter_fallback_intent:
+  - text: I did not understand you, sorry!
 actions: []
 forms: {}
 e2e_actions: []
