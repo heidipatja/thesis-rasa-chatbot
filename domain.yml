@@ -1,31 +1,53 @@
 config:
-  store_entities_as_slots: true
+  store_entities_as_slots: false
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
 intents:
-- password
-- accommodation
-- opening_hours
-- study_from_home
-- application
-- study_abroad
-- course_literature
-- schedule
-- tuition
-- student_life
-- food
-- student_health
-- phd
-- swedish
-- identity_number
-- work
-- disability
-- study_counseling
-- equality
-- internet
-- fallback_intent
-
+- password:
+    use_entities: true
+- accommodation:
+    use_entities: true
+- opening_hours:
+    use_entities: true
+- study_from_home:
+    use_entities: true
+- application:
+    use_entities: true
+- study_abroad:
+    use_entities: true
+- course_literature:
+    use_entities: true
+- schedule:
+    use_entities: true
+- tuition:
+    use_entities: true
+- student_life:
+    use_entities: true
+- food:
+    use_entities: true
+- student_health:
+    use_entities: true
+- phd:
+    use_entities: true
+- swedish:
+    use_entities: true
+- identity_number:
+    use_entities: true
+- work:
+    use_entities: true
+- disability:
+    use_entities: true
+- study_counseling:
+    use_entities: true
+- equality:
+    use_entities: true
+- internet:
+    use_entities: true
+- fallback_intent:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -64,7 +86,7 @@ responses:
   utter_work:
   - text: I understand that you have questions about work during studies.
   utter_disability:
-  - text: I understand that you have questions about disability.
+  - text: I understand that you have questions about disability and support.
   utter_study_counseling:
   - text: I understand that you have questions about study counselors.
   utter_equality:

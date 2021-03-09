@@ -102,7 +102,12 @@ rules:
   - intent: internet
   - action: utter_internet
 
-- rule: Answer fallback intent
+# - rule: Answer fallback intent
+#   steps:
+#   - intent: fallback_intent
+#   - action: utter_fallback_intent
+
+- rule: Answer fallback
   steps:
-  - intent: fallback_intent
+  - intent: nlu_fallback
   - action: utter_fallback_intent
