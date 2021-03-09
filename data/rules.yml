@@ -2,12 +2,102 @@ version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Answer password intent
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: password
+  - action: utter_password
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Answer accommodation intent
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: accommodation
+  - action: utter_accommodation
+
+- rule: Answer opening hours intent
+  steps:
+  - intent: opening_hours
+  - action: utter_opening_hours
+
+- rule: Answer study from home intent
+  steps:
+  - intent: study_from_home
+  - action: utter_study_from_home
+
+- rule: Answer application intent
+  steps:
+  - intent: application
+  - action: utter_application
+
+- rule: Answer study abroad intent
+  steps:
+  - intent: study_abroad
+  - action: utter_study_abroad
+
+- rule: Answer course literature intent
+  steps:
+  - intent: course_literature
+  - action: utter_course_literature
+
+- rule: Answer schedule intent
+  steps:
+  - intent: schedule
+  - action: utter_schedule
+
+- rule: Answer tuition intent
+  steps:
+  - intent: tuition
+  - action: utter_tuition
+
+- rule: Answer student_life intent
+  steps:
+  - intent: student_life
+  - action: utter_student_life
+
+- rule: Answer food intent
+  steps:
+  - intent: food
+  - action: utter_food
+
+- rule: Answer student health intent
+  steps:
+  - intent: student_health
+  - action: utter_student_health
+
+- rule: Answer phd intent
+  steps:
+  - intent: phd
+  - action: utter_phd
+
+- rule: Answer swedish intent
+  steps:
+  - intent: swedish
+  - action: utter_swedish
+
+- rule: Answer identity_number intent
+  steps:
+  - intent: identity_number
+  - action: utter_identity_number
+
+- rule: Answer work intent
+  steps:
+  - intent: work
+  - action: utter_work
+
+- rule: Answer disability intent
+  steps:
+  - intent: disability
+  - action: utter_disability
+
+- rule: Answer study councelling intent
+  steps:
+  - intent: study_councelling
+  - action: utter_study_councelling
+
+- rule: Answer equality intent
+  steps:
+  - intent: equality
+  - action: utter_equality
+
+- rule: Answer internet intent
+  steps:
+  - intent: internet
+  - action: utter_internet
