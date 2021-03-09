@@ -21,7 +21,7 @@ intents:
 - identity_number
 - work
 - disability
-- study_councelling
+- study_counseling
 - equality
 - internet
 - fallback_intent
@@ -65,12 +65,12 @@ responses:
   - text: I understand that you have questions about work during studies.
   utter_disability:
   - text: I understand that you have questions about disability.
-  utter_study_councelling:
-  - text: I understand that you have questions about study councellors.
+  utter_study_counseling:
+  - text: I understand that you have questions about study counselors.
   utter_equality:
   - text: I understand that you have questions about equality.
   utter_internet:
-  - text: I understand that you have questions about using internet.
+  - text: I understand that you have questions about using the internet.
   utter_fallback_intent:
   - text: I did not understand you, sorry!
 actions: []

@@ -87,10 +87,10 @@ rules:
   - intent: disability
   - action: utter_disability
 
-- rule: Answer study councelling intent
+- rule: Answer study counseling intent
   steps:
-  - intent: study_councelling
-  - action: utter_study_councelling
+  - intent: study_counseling
+  - action: utter_study_counseling
 
 - rule: Answer equality intent
   steps:
