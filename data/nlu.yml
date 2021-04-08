@@ -13,6 +13,11 @@ nlu:
     - Help me access account
     - I'm locked out from my account. Please send me a new password.
     - How do I get a new password?
+#    - The authentication doesn't work
+#    - I think my account was hacked and I want to fix it.
+#    - I have problems signing in. What do I do?
+#    - I can't remember my password.
+#    - My password was leaked and I need to change it.
 
 - intent: accommodation
   examples: |
@@ -26,12 +31,17 @@ nlu:
     - How can I find nice and affordable student accommodation near campus?
     - I need a place to live as soon as possible.
     - Am I eligible for student housing?
+#    - Long term rental near school.
+#    - Share house with other students
+#    - I haven't found anywhere to live when school starts. Can you help?
+#    - Cheap room for students
+#    - Do you have a list of landlords who rent out to students?
 
 - intent: opening_hours
   examples: |
     - I'm thinking about coming by today. How long are you open?
     - When do you close today?
-    - Opening hours today
+    - What are your opening hours?
     - What time are you open on Tuesday?
     - How long are you open tomorrow
     - Open today
@@ -39,6 +49,11 @@ nlu:
     - Are you open on Saturdays?
     - I need to talk to someone in person. What time can I visit you?
     - I'm wondering what your office hours are
+#    - Are you open today at noon?
+#    - I'm coming by tomorrow. When are you open?
+#    - What are your business hours?
+#    - What time are you closing on Friday?
+#    - Are you open every day?
 
 - intent: study_from_home
   examples: |
@@ -52,6 +67,12 @@ nlu:
     - What do I need to study online?
     - I want to complete my master's degree. Is studying from home a possibility?
     - Can I attend school remotely
+#    - Can I study without moving from my hometown?
+#    - Do you have courses that are taught entirely online?
+#    - Can I attend classes from home and how does that work
+#    - Can I get a degree by doing online studies?
+#    - Are classes compulsory?
+
 
 - intent: application
   examples: |
@@ -65,6 +86,11 @@ nlu:
     - How do I apply to a programme?
     - What is the admissions process?
     - Can I send in a written application?
+#    - How to get admitted to the university
+#    - Where to apply
+#    - Apply to a master's programme
+#    - What's the deadline for accepting my offer of admission?
+#    - What are the entry requirements for college?
 
 - intent: study_abroad
   examples: |
@@ -74,10 +100,15 @@ nlu:
     - Can I study in Canada?
     - What are my options for studying abroad
     - Are my grades good enough to study abroad?
-    - International studies
+    - Going to school internationally
     - Apply to an exchange programme
     - Can I apply for exchange studies?
     - What are my options for studying abroad if I want to go next semester?
+#    - Is it possible to study overseas for a year?
+#    - Information about studying abroad
+#    - Exchange student
+#    - I want to know more about taking summer courses abroad.
+#    - Become an Erasmus student
 
 - intent: course_literature
   examples: |
@@ -91,6 +122,11 @@ nlu:
     - Where can I find course literature?
     - How do I find an article for my course
     - Can you borrow course books
+#    - Student bookshops
+#    - Does the library have course books?
+#    - Used course literature
+#    - How to find used books for class
+#    - Is there a bookshop on campus? Or can you recommend a shop nearby.
 
 
 - intent: schedule
@@ -105,6 +141,11 @@ nlu:
     - When is my lecture?
     - Can you show me the course calendar?
     - Course schedule for this week
+#    - I need to know what time my lecture is
+#    - At what time does the algebra class start?
+#    - I need the schedule for the course Basic System Verification. Can you find it for me?
+#    - Which classroom is the Introduction to algebra class in today?
+#    - Schedule for this term
 
 - intent: tuition
   examples: |
@@ -118,10 +159,15 @@ nlu:
     - Do I have to pay to go to college?
     - I’m wondering what the fee for attending a single course is?
     - Tuition fees for computer science program
+#    - Education costs
+#    - Does it cost money to go to university?
+#    - What's the cost of going to college
+#    - I live in Switzerland. Do I need to pay tuition fees if I want to go to your university?
+#    - How much does it cost to get a master's degree
 
 - intent: student_life
   examples: |
-    - Do you have any tips on things to do on campus, like clubs, pubs or other activities?
+    - Do you have any tips on things to do on campus, like clubs, pubs or other meetings?
     - How to find friends in school
     - Student clubs
     - How is the student life?
@@ -131,6 +177,11 @@ nlu:
     - Are there clubs that I can join?
     - Can I play on a school team on campus?
     - What can I do in my free time?
+#    - What's it like to be a student?
+#    - How do I meet new friends at campus, is there some kind of meeting I can attend?
+#    - Student associations
+#    - How to get involved in the student's union
+#    - What kind of happenings do you have for students?
 
 - intent: food
   examples: |
@@ -144,6 +195,11 @@ nlu:
     - Where can I find pizza on campus?
     - I want to find takeaway.
     - Could you please help me find a coffee shop?
+#    - Do colleges have free lunches?
+#    - What time are the lunch restaurants open?
+#    - Best food on campus
+#    - Is it possible to buy lunchboxes on campus and if so, where do I get them?
+#    - Sandwiches or salads for cheap
 
 - intent: student_health
   examples: |
@@ -157,6 +213,11 @@ nlu:
     - I’m feeling stressed and need someone to talk to
     - I’m feeling depressed and need to see a psychiatrist
     - I can’t keep up with school
+#    - Do you have a student health center and I so, how do I contact it?
+#    - Student healthcare options
+#    - How to manage stress
+#    - I want to get in contact with the student health services.
+#    - Do you have shrinks available for students?
 
 - intent: phd
   examples: |
@@ -170,6 +231,11 @@ nlu:
     - How to get my PhD
     - What are my options for a postgraduate degree in computer science?
     - How do I get a doctorate degree?
+#    - Is it free to get a PhD in Sweden?
+#    - I want to do higher studies in computer science. Where can I find more information?
+#    - How to get a PhD degree
+#    - PhD studies in Sweden
+#    - Doctor's degree requirements
 
 - intent: swedish
   examples: |
@@ -183,6 +249,11 @@ nlu:
     - I'm thinking about applying to your school as an exchange student, do I need to know Swedish?
     - Can I manage without learning the language
     - Language skills for foreign students
+#    - Is speaking Swedish a requirement?
+#    - Do I need to speak Swedish if I'm studying in Sweden?
+#    - Is it necessary to know the language?
+#    - How important is it to know a bit of Swedish before moving there?
+#    - Take a Swedish class
 
 - intent: identity_number
   examples: |
@@ -196,6 +267,11 @@ nlu:
     - How to get a Swedish personal id number
     - Swedish identity documents for studies
     - Who can apply for a Swedish identity number?
+#    - I need to get an identity number. Can you help me?
+#    - Is it possible to get a personal number as an exchange student?
+#    - How to get an identity number
+#    - Apply for a Swedish identity number
+#    - Temporary personal number Sweden
 
 - intent: work
   examples: |
@@ -209,6 +285,11 @@ nlu:
     - How to find work in Sweden
     - How to find a job for students
     - Internships for university students
+#    - Work permit while studying
+#    - Is it possible to get a part-time job while studying at university?
+#    - Find jobs for students
+#    - How to find a job while studying
+#    - Do you employ students?
 
 - intent: disability
   examples: |
@@ -222,6 +303,11 @@ nlu:
     - I need a sign language interpreter. What do I do?
     - I want to know more about how accessible the university is
     - Support for students with learning disorder
+#    - How accessible is the campus area?
+#    - Studying with a disability
+#    - Is it possible to go to university if you have a learning disability?
+#    - Visual impairment in school
+#    - Is the campus and the classrooms accessible for people in wheelchairs?
 
 - intent: study_counseling
   examples: |
@@ -235,6 +321,11 @@ nlu:
     - I want to have a leave of studies, who can I talk to
     - I want to get in contact with the coordinator for exchange students in Norway
     - What should I do if I want to quit a course?
+#    - I need some advise regarding my studies
+#    - Find a career counselor
+#    - How to choose the right programme
+#    - Get in contact with study counselor
+#    - I want to take a break from my studies. How do I do that?
 
 - intent: equality
   examples: |
@@ -248,6 +339,11 @@ nlu:
     - What's your policy on discrimination
     - Is the university diverse?
     - Do you have policies for equal treatment in school
+#    - I want to know more about diversity
+#    - Do you have an anti-discrimination policy?
+#    - Is the university inclusive?
+#    - How do I report discrimination in the classroom?
+#    - How are you working on improving diversity?
 
 - intent: internet
   examples: |
@@ -261,3 +357,8 @@ nlu:
     - Best place to study with Wi-Fi
     - I keep losing my network connection when I'm at school
     - I want to surf on the web, how do I connect?
+#    - Get access to wifi at school
+#    - How to connect to wifi
+#    - I can't access the wifi. Can you help me?
+#    - I keep losing my internet connection, what's wrong?
+#    - Open network on campus
