@@ -20,17 +20,17 @@ git clone https://github.com/heidipatja/thesis-rasa-chatbot
 ```
 
 ## Commands for testing
-**Traning phase 1**
+**Testing phase 1**
 ```
 rasa shell -m models/phase1.tar.gz --debug
 ```
 
-**Traning phase 2**
+**Testing phase 2**
 ```
 rasa shell -m models/phase2.tar.gz --debug
 ```
 
-**Traning phase 3**
+**Testing phase 3**
 ```
 rasa shell -m models/phase3.tar.gz --debug
 ```
